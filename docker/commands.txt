@@ -29,3 +29,10 @@ same output
 docker build -t <dockerId:projectName:version> . -> tagging an image (giving it a name)
 docker run -p 8080:8080 <image id/name> -> port mapping, first port is local port, second 
 one is container port
+docker image ls -> list all top level images
+docker rmi -f $(docker images -aq) -> remove all docker images
+docker-compose up -> start containers
+docker-compose up -d -> launch in background, -d can also be used for normal run command
+docker-compose up --build -> rebuild images and start containers
+docker-compose down -> stops all running containers and deltese them as well
+docker-compose ps -> see running containers from docker-compose

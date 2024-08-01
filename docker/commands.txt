@@ -1,0 +1,24 @@
+docker run <image name> -> try to create and run a container based of an image
+docker run <image name> <startup command> -> overriding the default command
+docker ps -> list all running containers
+docker ps --all -> list all containers
+docker run = docker create + docker start
+docker start <container id> -> start a container
+docker start -a <container id> -> start a container but also attach the output
+of it to our terminal
+docker system prune -> delete eveyrthing (images, containers,...)
+docker logs -> retrieve all information that was emited (outputed) 
+from a container
+docker stop <container id > -> Stops a running container but gives 
+him a little time for cleanup work
+docker kill <container id > -> Stops a running container immediately
+docker exec -it <container id> <command> -> execute another command 
+inside a running container, -it means thet it is interactive, so 
+you can type in the terminal to talk to the container
+-it = -i + -t
+-i -> interactive
+-t -> pretty format
+docker exec -it <container id> sh -> we get full terminal access inside the
+context of a container
+docker run -it <image> sh -> get the terminal on starting of a container
+exit -> exit the terminal of a container

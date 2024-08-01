@@ -27,3 +27,5 @@ DOCKER_BUILDKIT=0 docker build . -> disable the new buldkit feature, useful
 if you follow a tutorial without the new buildkit feature and want to see the
 same output
 docker build -t <dockerId:projectName:version> . -> tagging an image (giving it a name)
+docker run -p 8080:8080 <image id/name> -> port mapping, first port is local port, second 
+one is container port
